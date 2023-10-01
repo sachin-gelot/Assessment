@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+	height: 100vh;
+	background-color: rgb(229, 217, 202);
+}
+
+nav {
+	margin: 0 auto;
+	/* padding: 0px 0; */
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(20, 20, 255);
+}
+span{
+	color: #fffcfc;
+}
+img{
+	height: 80px;
+
+}
+
+.logo h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nav-item {
+	position: relative;
+}
+
+.nav-item span {
+	margin-left: 80px;
+	text-transform: capitalize;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.store-item,.store-item2{
+	position: absolute;
+	top: 45px;
+	background-color: rgb(20, 20, 255);
+	padding: 10px;
+	text-transform: capitalize;
+	right: 400px;
+	display: none;
+}
+.active-store{
+	transition: 0.5s ease-in-out;
+	/* background-color: aqua; */
+	padding: 20px 30px;
+	text-align: center;
+}
+.store-item2 {
+	right: -180px;
+	top: 170px;
+}
+.active{
+	display: none;
+}
+.store-item span,
+.store-item2 span {
+	display: block;
+	border: 2px solid black;
+	padding: 8px 30px;
+	margin: 8px 0;
+}
+#span-click {
+	right: 230px;
+	top: 235px;
+	z-index: 1000;
+}
+.active-store:hover .store-item{
+	display: block;
+	transition: .5s ease-in-out;
+	opacity: 1;
+}
+.active:hover .store-item2{
+	display: block;
+}
+button{
+	height: 40px;
+	width: 60px;
+}
