@@ -80,7 +80,7 @@ img{
 }
 .active-store:hover .store-item{
 	display: block;
-	transition: .5s ease-in-out;
+	transition: 0.9s ease-in-out;
 	opacity: 1;
 }
 .active:hover .store-item2{
